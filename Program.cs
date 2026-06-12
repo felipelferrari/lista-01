@@ -1,8 +1,8 @@
 ﻿Console.Write("Informe o valor total da compra: ");
-decimal ValorFinal = decimal.Parse(Console.ReadLine());
+double ValorFinal = double.Parse(Console.ReadLine());
 
-decimal desconto = 0;
-decimal valorFinal = 0;
+double desconto = 0;
+double valorFinal = 0;
 
 if (ValorFinal >= 200)
 {
