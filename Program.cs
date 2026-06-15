@@ -1,14 +1,18 @@
-﻿Console.WriteLine("Informe a quantidade de tarefas concluídas:");
-int tarefasConcluidas = int.Parse(Console.ReadLine());
-int Meta = 50;
-if (tarefasConcluidas >= Meta)
+﻿Console.WriteLine("Informe a idade:");
+int idade = int.Parse(Console.ReadLine());
+if (idade >= 0 && idade <= 11)
 {
-    Console.WriteLine("Meta atingida.");
-    Console.WriteLine($"Tarefas concluídas: {tarefasConcluidas}");
+    Console.WriteLine("Faixa etária: criança");
 }
-
-else
+else if (idade >= 12 && idade <= 17)
 {
-    Console.WriteLine("Meta não atingida.");
-    Console.WriteLine($"Faltaram {Meta - tarefasConcluidas} tarefas.");
+    Console.WriteLine("Faixa etária: adolescente");
+}
+else if (idade >= 18 && idade <= 59)
+{
+    Console.WriteLine("Faixa etária: adulto");
+}
+else if (idade >= 60)
+{
+    Console.WriteLine("Faixa etária: idoso");
 }
