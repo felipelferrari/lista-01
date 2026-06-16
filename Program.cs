@@ -1,16 +1,27 @@
-﻿Console.WriteLine("Informe o primeiro número:");
-int numero1 = int.Parse(Console.ReadLine());
-Console.WriteLine("Informe o segundo número:");
-int numero2 = int.Parse(Console.ReadLine());
-if (numero1 > numero2)
+﻿Console.WriteLine("Informe a primeira pontuação:");
+int primeiraPontuacao = int.Parse(Console.ReadLine()!);
+
+Console.WriteLine("Informe a segunda pontuação:");
+int segundaPontuacao = int.Parse(Console.ReadLine()!);
+
+Console.WriteLine("Informe a terceira pontuação:");
+int terceiraPontuacao = int.Parse(Console.ReadLine()!);
+
+int maiorPontuacao = primeiraPontuacao;
+
+if (primeiraPontuacao == segundaPontuacao && segundaPontuacao == terceiraPontuacao)
 {
-    Console.WriteLine($"O primeiro número é maior.");
+    Console.WriteLine("As três pontuações são iguais.");
 }
-else if (numero2 > numero1)
+else 
+
+if (segundaPontuacao > maiorPontuacao)
 {
-    Console.WriteLine($"O segundo número é maior.");
+    maiorPontuacao = segundaPontuacao;
 }
-else
+
+if (terceiraPontuacao > maiorPontuacao)
 {
-    Console.WriteLine("Os números são iguais.");
+    maiorPontuacao = terceiraPontuacao;
 }
+Console.WriteLine($"A maior pontuação é: {maiorPontuacao}");
