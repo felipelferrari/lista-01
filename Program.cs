@@ -1,9 +1,8 @@
-﻿Console.Write("Informe o número inicial da contagem regressiva: ");
+﻿Console.Write("Informe o número da tabuada: ");
 int numero = int.Parse(Console.ReadLine());
 
-for (int i = numero; i >= 0; i--)
+for (int i = 1; i <= 10; i++)
 {
-    Console.WriteLine(i);
+    int resultado = numero * i;
+    Console.WriteLine(numero + " x " + i + " = " + resultado);
 }
-
-Console.WriteLine("Fim da contagem.");
